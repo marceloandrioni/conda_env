@@ -9,10 +9,10 @@ channels:
     - conda-forge
     - defaults
 
-# Proxy settings: http://[username]:[password]@[server]:[port]
-proxy_servers:
-    http: http://usr:psw@proxyserver.com:8080
-    https: https://usr:psw@proxyserver.com:8080
+# Proxy settings (if behind a proxy): http://[username]:[password]@[server]:[port] 
+# proxy_servers:
+#     http: http://usr:psw@proxyserver.com:8080
+#     https: https://usr:psw@proxyserver.com:8080
 ```
 
 # main work env
