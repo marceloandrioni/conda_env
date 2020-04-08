@@ -37,5 +37,5 @@ in `~/.config/pycodestyle`
 
 ```
 [pycodestyle]
-ignore = E501, E722, W503, W605
+ignore = E501, E722, W503, W605, D202
 ```
