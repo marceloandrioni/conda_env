@@ -31,3 +31,11 @@ same as work but without spyder
 
 # env to test CF Conventions (incompatible with other packages)
 `conda create -n cfconv cfchecker compliance-checker`
+
+# pycodestyle
+in `~/.config/pycodestyle`
+
+```
+[pycodestyle]
+ignore = E501, E722, W503, W605
+```
