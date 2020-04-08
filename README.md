@@ -1,6 +1,6 @@
 # conda_env
 
-in `.condarc`
+in `~/.condarc`
 ```
 ssl_verify: false
 
