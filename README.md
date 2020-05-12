@@ -15,7 +15,7 @@ channels:
 #     https: https://usr:psw@proxyserver.com:8080
 ```
 
-# main work env
+## main work env
 ```
 conda create -n work python=3.7 \
     spyder ipython \
@@ -27,13 +27,13 @@ conda create -n work python=3.7 \
     fes
 ```
 
-# operational env
+## operational env
 same as work but without spyder
 
-# env to test CF Conventions (incompatible with other packages)
+## env to test CF Conventions (incompatible with other packages)
 `conda create -n cfconv cfchecker compliance-checker`
 
-# pycodestyle
+## pycodestyle
 in `~/.config/pycodestyle`
 
 ```
