@@ -1,4 +1,4 @@
-# conda_env
+# conda environment
 
 in `~/.condarc`
 ```
