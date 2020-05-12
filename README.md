@@ -27,6 +27,29 @@ conda create -n work python=3.7 \
     fes
 ```
 
+### Notes:
+
+#### cx_oracle:
+cx_oracle also needs the Oracle library [files](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html).
+
+Dowload and extract:
+- instantclient-basic-linux.x64-12.1.0.2.0.zip
+- instantclient-sqlplus-linux.x64-12.1.0.2.0.zip
+
+Add to Path:
+```
+export LD_LIBRARY_PATH=/some/dir/instantclient_12_1/:$LD_LIBRARY_PATH
+export PATH=/some/dir/instantclient_12_1/:$PATH
+export ORACLE_HOME=/some/dir/instantclient_12_1/
+```
+
+#### fiona
+fiona is needed because `cartopy.io.shapereader.Reader` is faster with fiona installed. It also avoids errors like
+```
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc7 in position 5: ordinal not in range(128)
+```
+when reading shapefiles with accetend characters.
+
 ## operational env
 same as work but without spyder
 
