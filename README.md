@@ -21,7 +21,7 @@ conda create -n work python=3.7 \
     spyder ipython jupyter \
     psutil requests unidecode humanize termcolor colorama aniso8601 tenacity \
     memory_profiler cx_oracle flask \
-    pandas geopandas descartes geopy seaborn xlrd openpyxl \
+    pandas geopandas descartes geopy seaborn python-docx xlsxwriter xlrd openpyxl \
     dask netcdf4 xarray cfgrib eccodes cdsapi pyferret ferret_datasets pydap metpy xesmf \
     matplotlib windrose cartopy shapely fiona bokeh plotly folium \
     fes
