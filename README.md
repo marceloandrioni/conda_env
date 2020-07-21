@@ -37,7 +37,7 @@ I don't know why, but in older systems (e.g. CentoOS 6.5), packages `spyder`, `j
 ...
 (core dumped)
 ```
-So if these packages are needed, it is best to install then in a dedicated env.
+So if these packages are needed, it is best to install then in a dedicated env or install olders versions.
 
 #### cx_oracle:
 cx_oracle also needs the Oracle library [files](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html).
