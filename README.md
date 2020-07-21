@@ -30,6 +30,15 @@ conda create -n work python=3.7 \
 
 ### Notes:
 
+#### CentOS 6.5
+I don't know why, but in older systems (e.g. CentoOS 6.5), packages `spyder`, `jupyter` and `pyferret` cause errors like:
+```
+*** glibc detected *** python: double free or corruption (!prev)
+...
+(core dumped)
+```
+So if these packages are needed, it is best to install then in a dedicated env.
+
 #### cx_oracle:
 cx_oracle also needs the Oracle library [files](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html).
 
