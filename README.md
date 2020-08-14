@@ -24,6 +24,7 @@ conda create -n work python=3.7 \
     pandas geopandas shapely fiona descartes geopy alphashape \
     python-docx xlsxwriter xlrd openpyxl \
     dask netcdf4 xarray cfgrib eccodes cdsapi pyferret ferret_datasets pydap metpy xesmf \
+    zarr s3fs \
     nco cdo \
     matplotlib seaborn windrose cartopy bokeh plotly folium \
     fes
