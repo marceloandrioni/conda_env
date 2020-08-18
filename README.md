@@ -23,9 +23,10 @@ conda create -n work python=3.7 \
     memory_profiler cx_oracle flask \
     pandas geopandas shapely fiona descartes geopy alphashape \
     python-docx xlsxwriter xlrd openpyxl \
-    dask netcdf4 xarray cfgrib eccodes cdsapi pyferret ferret_datasets pydap metpy xesmf \
-    zarr s3fs gcsfs \
+    dask netcdf4 xarray cfgrib eccodes cdsapi pynio pydap metpy xesmf \
+    pyferret ferret_datasets \
     nco cdo \
+    zarr s3fs gcsfs \
     matplotlib seaborn windrose cartopy bokeh plotly folium \
     fes
 ```
