@@ -23,13 +23,19 @@ conda create -n work python=3.7 \
     memory_profiler cx_oracle flask \
     pandas geopandas shapely fiona descartes geopy alphashape \
     python-docx xlsxwriter xlrd openpyxl \
-    dask netcdf4 xarray cfgrib eccodes cdsapi pynio pydap metpy xesmf \
+    dask netcdf4 xarray cfgrib eccodes cdsapi pynio pydap metpy esmpy \
     pyferret ferret_datasets \
     nco cdo \
     zarr s3fs gcsfs \
     matplotlib seaborn windrose cartopy bokeh plotly folium \
     fes
 ```
+
+`conda activate work`
+
+Following [this discussion](https://github.com/JiaweiZhuang/xESMF/issues/47), `xesmf` hast to be installed after `esmpy` to work it correctly.
+
+`conda install xesmf`
 
 ### Notes:
 
