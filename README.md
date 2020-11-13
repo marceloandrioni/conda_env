@@ -20,7 +20,7 @@ channels:
 conda create -n work python=3.7 \
     spyder ipython jupyter \
     psutil requests unidecode humanize termcolor colorama aniso8601 tenacity \
-    memory_profiler cx_oracle flask \
+    pytest memory_profiler cx_oracle flask \
     pandas geopandas shapely fiona descartes geopy alphashape \
     python-docx xlsxwriter xlrd openpyxl \
     dask netcdf4 xarray cfgrib eccodes cdsapi pynio pydap metpy esmpy \
