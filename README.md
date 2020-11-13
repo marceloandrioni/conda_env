@@ -52,14 +52,14 @@ So if these packages are needed, it is best to install then in a dedicated env o
 cx_oracle also needs the Oracle library [files](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html).
 
 Dowload and extract:
-- instantclient-basic-linux.x64-12.1.0.2.0.zip
-- instantclient-sqlplus-linux.x64-12.1.0.2.0.zip
+- instantclient-basic-linux.x64-19.9.0.0.0dbru.zip
+- instantclient-sqlplus-linux.x64-19.9.0.0.0dbru.zip
 
 Add to Path:
 ```
-export LD_LIBRARY_PATH=/some/dir/instantclient_12_1/:$LD_LIBRARY_PATH
-export PATH=/some/dir/instantclient_12_1/:$PATH
-export ORACLE_HOME=/some/dir/instantclient_12_1/
+export LD_LIBRARY_PATH=/some/dir/instantclient_19_9:$LD_LIBRARY_PATH
+export PATH=/some/dir/instantclient_19_9:$PATH
+export ORACLE_HOME=/some/dir/instantclient_19_9
 ```
 
 #### fiona
