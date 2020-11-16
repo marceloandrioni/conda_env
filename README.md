@@ -27,7 +27,7 @@ conda create -n work python=3.7 \
     pyferret ferret_datasets \
     nco cdo \
     zarr s3fs gcsfs \
-    matplotlib seaborn windrose cartopy bokeh plotly folium \
+    matplotlib seaborn windrose cartopy bokeh plotly folium cmocean \
     fes
 ```
 
