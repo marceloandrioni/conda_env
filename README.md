@@ -7,6 +7,7 @@ ssl_verify: false
 channels:
     - fbriol   # FES Tide https://bitbucket.org/cnes_aviso/fes/src/master/
     - conda-forge
+    - ncar
     - defaults
 
 # Proxy settings (if behind a proxy): http://[username]:[password]@[server]:[port] 
@@ -27,7 +28,7 @@ conda create -n work python=3.7 \
     pyferret ferret_datasets \
     nco cdo \
     zarr s3fs gcsfs \
-    matplotlib seaborn windrose cartopy bokeh plotly folium cmocean \
+    matplotlib seaborn windrose cartopy bokeh plotly folium cmocean geocat-viz \
     fes
 ```
 
