@@ -6,8 +6,8 @@ ssl_verify: false
 
 channels:
     - fbriol   # FES Tide https://bitbucket.org/cnes_aviso/fes/src/master/
+    - ncar    
     - conda-forge
-    - ncar
     - defaults
 
 # Proxy settings (if behind a proxy): http://[username]:[password]@[server]:[port] 
