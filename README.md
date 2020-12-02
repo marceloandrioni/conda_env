@@ -5,10 +5,9 @@ in `~/.condarc`
 ssl_verify: false
 
 channels:
-    - fbriol   # FES Tide https://bitbucket.org/cnes_aviso/fes/src/master/
-    - ncar    
-    - conda-forge
-    - defaults
+  - defaults
+  - conda-forge
+  - fbriol     # FES Tide https://bitbucket.org/cnes_aviso/fes/src/master/
 
 # Proxy settings (if behind a proxy): http://[username]:[password]@[server]:[port] 
 # proxy_servers:
@@ -19,24 +18,21 @@ channels:
 ## main work env
 ```
 conda create -n work python=3.7 \
-    spyder ipython jupyter \
-    psutil requests unidecode humanize termcolor colorama aniso8601 tenacity \
-    pytest memory_profiler cx_oracle flask \
-    pandas geopandas shapely fiona descartes geopy alphashape \
+    spyder \
+    xarray dask netcdf4 cfgrib eccodes \
+    metpy cdsapi esmpy \
+    unidecode humanize termcolor aniso8601 tenacity \
+    cx_oracle flask \
+    cartopy seaborn windrose plotly folium cmocean \
     python-docx xlsxwriter xlrd openpyxl \
-    dask netcdf4 xarray cfgrib eccodes cdsapi pynio pydap metpy esmpy \
-    pyferret ferret_datasets \
-    nco cdo \
-    zarr s3fs gcsfs \
-    matplotlib seaborn windrose cartopy bokeh plotly folium cmocean geocat-viz \
-    fes
+    geopy alphashape
 ```
 
 `conda activate work`
 
-Following [this discussion](https://github.com/JiaweiZhuang/xESMF/issues/47), `xesmf` hast to be installed after `esmpy` to work it correctly.
+or create the env from the environment file:
 
-`conda install xesmf`
+`conda env create -f environment.yml`
 
 ### Notes:
 
@@ -48,6 +44,12 @@ I don't know why, but in older systems (e.g. CentoOS 6.5), packages `spyder`, `j
 (core dumped)
 ```
 So if these packages are needed, it is best to install then in a dedicated env or install olders versions.
+
+#### xESMF
+
+Following [this discussion](https://github.com/JiaweiZhuang/xESMF/issues/47), `xesmf` hast to be installed after `esmpy` to work it correctly.
+
+`conda install xesmf`
 
 #### cx_oracle:
 cx_oracle also needs the Oracle library [files](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html).
@@ -62,13 +64,6 @@ export LD_LIBRARY_PATH=/some/dir/instantclient_19_9:$LD_LIBRARY_PATH
 export PATH=/some/dir/instantclient_19_9:$PATH
 export ORACLE_HOME=/some/dir/instantclient_19_9
 ```
-
-#### fiona
-fiona is needed because `cartopy.io.shapereader.Reader` is faster with fiona installed. It also avoids errors like
-```
-UnicodeDecodeError: 'ascii' codec can't decode byte 0xc7 in position 5: ordinal not in range(128)
-```
-when reading shapefiles with accetend characters.
 
 ## operational env
 same as work but without spyder
