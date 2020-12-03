@@ -34,6 +34,8 @@ or create the env from the environment file:
 
 `conda env create -f environment.yml`
 
+but remembering to edit the `prefix` variable at the last line to reflect the actual user path.
+
 ### Notes:
 
 #### CentOS 6.5
