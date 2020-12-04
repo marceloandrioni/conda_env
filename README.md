@@ -1,21 +1,42 @@
-# conda environment
+## Download
+Download [Anaconda](https://www.anaconda.com/products/individual#Downloads) and install (tested with `Anaconda3-2020.11`)
 
-in `~/.condarc`
+## Activate `base` environment
+
+### Linux
+Open a terminal and run `eval "$(/home/eani/anaconda3/bin/conda shell.bash hook)"`
+
+### Windows
+Just open `Anaconda Powershell Prompt (anaconda3)`
+
+## Configure .condarc
+Create the file with a text editor if it doesn't exist or just run `conda config` to create an empty file.
+
+### Linux
+`/home/<user>/.condarc`
+
+### Windows
+`C:\Users\<user>\.condarc`
+
+### Content:
 ```
 ssl_verify: false
 
 channels:
   - defaults
   - conda-forge
-  - fbriol     # FES Tide https://bitbucket.org/cnes_aviso/fes/src/master/
+  - fbriol   # FES Tide https://bitbucket.org/cnes_aviso/fes/src/master/
 
-# Proxy settings (if behind a proxy): http://[username]:[password]@[server]:[port] 
+## Proxy settings (uncomment 3 lines bellow if behind a proxy)
 # proxy_servers:
-#     http: http://usr:psw@proxyserver.com:8080
-#     https: https://usr:psw@proxyserver.com:8080
+#     http: http://username:password@server:port
+#     https: https://username:password@server:port
 ```
 
-## main work env
+## New envs
+
+It is best not to change the `base` env and always create a new env when trying new packages.
+
 ```
 conda create -n work python=3.7 \
     spyder \
@@ -67,11 +88,13 @@ export PATH=/some/dir/instantclient_19_9:$PATH
 export ORACLE_HOME=/some/dir/instantclient_19_9
 ```
 
-## operational env
-same as work but without spyder
-
-## env to test CF Conventions (incompatible with other packages)
+### env to test CF Conventions (incompatible with other packages)
 `conda create -n cfconv cfchecker compliance-checker`
+
+### to remove an env
+```
+conda remove --name env_name --all
+```
 
 ## pycodestyle
 in `~/.config/pycodestyle`
@@ -79,8 +102,4 @@ in `~/.config/pycodestyle`
 ```
 [pycodestyle]
 ignore = E501, E722, W503, W605
-```
-## to remove an env
-```
-conda remove --name env_name --all
 ```
