@@ -66,7 +66,7 @@ I don't know why, but in older systems (e.g. CentoOS 6.5), packages `spyder`, `j
 ...
 (core dumped)
 ```
-So if these packages are needed, it is best to install then in a dedicated env or install olders versions.
+So if these packages are needed, it is best to install then in a dedicated env or install older versions.
 
 #### xESMF
 
