@@ -97,8 +97,15 @@ conda remove --name env_name --all
 ```
 
 ## pycodestyle
-in `~/.config/pycodestyle`
+Ignore some errors and warnings in the code style:
 
+### Linux 
+`/home/<user>/.config/pycodestyle`
+
+### Windows
+???
+
+### Content:
 ```
 [pycodestyle]
 ignore = E501, E722, W503, W605
