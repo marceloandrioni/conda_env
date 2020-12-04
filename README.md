@@ -37,9 +37,7 @@ channels:
 
 It is best not to change the `base` env and always create a new env when trying new packages.
 
-```
-conda create -n work python=3.7 spyder xarray dask netcdf4 cfgrib eccodes metpy cdsapi unidecode humanize termcolor aniso8601 tenacity cx_oracle flask cartopy seaborn windrose plotly folium cmocean python-docx xlsxwriter xlrd openpyxl geopy alphashape
-```
+`conda create -n work python=3.7 spyder xarray dask netcdf4 cfgrib eccodes metpy cdsapi unidecode humanize termcolor aniso8601 tenacity cx_oracle flask cartopy seaborn windrose plotly folium cmocean python-docx xlsxwriter xlrd openpyxl geopy alphashape`
 
 `conda activate work`
 
