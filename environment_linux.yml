@@ -1,4 +1,4 @@
-name: work
+name: <env_name>
 channels:
   - defaults
   - conda-forge
@@ -287,4 +287,4 @@ dependencies:
   - zipp=3.4.0
   - zlib=1.2.11
   - zstd=1.3.7
-prefix: /home/eani/anaconda3/envs/work
+prefix: /home/<user>/anaconda3/envs/<env_name>
