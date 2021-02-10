@@ -41,7 +41,7 @@ It is best not to change the `base` environment (env) and always create a new en
 spyder
 xarray dask netcdf4 cfgrib eccodes
 metpy cdsapi
-unidecode humanize termcolor aniso8601 tenacity
+unidecode humanize tabulate termcolor aniso8601 tenacity
 cx_oracle flask
 cartopy seaborn windrose plotly folium cmocean python-docx xlsxwriter xlrd openpyxl geopy alphashape`
 
