@@ -35,7 +35,9 @@ channels:
 
 # New envs
 
-It is best not to change the `base` environment (env) and always create a new env when trying new packages. The new env can be created "by hand", e.g.:
+**_NOTE:_** [mamba](https://github.com/mamba-org/mamba) is a reimplementation of the conda package manager in C++, so it is much faster when solving dependencies. It is worth installing it in the base env (`conda install mamba`) and just replacing the `conda` with `mamba` command when creating a new env (`mamba create -n <env_name> ...`) or installing a new package (`mamba install <pkg>`)
+
+It is best to change the `base` environment (env) as little as possible and always create a new env when trying new packages. The new env can be created "by hand", e.g.:
 
 `conda create -n <env_name> python=3.7
 spyder
@@ -54,9 +56,6 @@ but remembering to edit the `name` and `prefix` variables at the first and last 
 After creation, the new env must be activated, e.g.:
 
 `conda activate <env_name>`
-
-
-## Notes:
 
 ### cx_oracle:
 To connect to Oracle databases using the `cx_oracle` library, the user also needs the Oracle library files ([Linux](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html)/[Windows](https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html)).
