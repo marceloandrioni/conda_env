@@ -39,7 +39,7 @@ channels:
 
 It is best to change the `base` environment (env) as little as possible and always create a new env when trying new packages. The new env can be created "by hand", e.g.:
 
-`conda create -n <env_name> python=3.7
+`[ conda | mamba ] create -n <env_name> python=3.7
 spyder
 xarray dask netcdf4 cfgrib eccodes
 metpy cdsapi
