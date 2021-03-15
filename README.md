@@ -85,15 +85,6 @@ Following [this discussion](https://github.com/JiaweiZhuang/xESMF/issues/47), `x
 
 `conda install xesmf`
 
-### CentOS 6.5
-In older systems (e.g. CentoOS 6.5), packages `spyder`, `jupyter` and `pyferret` cause errors like:
-```
-*** glibc detected *** python: double free or corruption (!prev)
-...
-(core dumped)
-```
-So if these packages are needed, it is best to install then in a dedicated env or install older versions.
-
 ### env to test CF Conventions
 `conda create -n cfconv cfchecker compliance-checker`
 
