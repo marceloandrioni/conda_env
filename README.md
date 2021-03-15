@@ -45,7 +45,7 @@ xarray dask netcdf4 cfgrib eccodes
 metpy cdsapi
 unidecode humanize tabulate termcolor aniso8601 tenacity
 cx_oracle flask
-cartopy seaborn windrose plotly folium ipyleaflet cmocean python-docx xlsxwriter xlrd openpyxl gitpython geopy alphashape`
+cartopy seaborn windrose plotly python-kaleido folium ipyleaflet cmocean python-docx xlsxwriter xlrd openpyxl gitpython geopy alphashape`
 
 or imported from a `.yml` file (itself created with `conda env export --no-build > environment.yml`), e.g.:
 
