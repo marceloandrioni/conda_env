@@ -41,8 +41,8 @@ It is best to change the `base` environment (env) as little as possible and alwa
 
 `[ conda | mamba ] create -n <env_name> python=3.7
 spyder
-xarray dask netcdf4 cfgrib eccodes
-metpy cdsapi
+xarray dask netcdf4 cfgrib eccodes cdsapi
+metpy seawater gsw
 unidecode humanize tabulate termcolor aniso8601 tenacity
 cx_oracle flask
 cartopy seaborn windrose plotly python-kaleido folium ipyleaflet cmocean python-docx xlsxwriter xlrd openpyxl gitpython geopy alphashape`
