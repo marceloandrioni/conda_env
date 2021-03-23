@@ -35,11 +35,11 @@ channels:
 
 # New envs
 
-**_NOTE:_** [mamba](https://github.com/mamba-org/mamba) is a reimplementation of the conda package manager in C++, so it is much faster when solving dependencies. It is worth installing it in the base env (`conda install mamba`) and just replacing the `conda` with `mamba` command when creating a new env (`mamba create -n <env_name> ...`) or installing a new package (`mamba install <pkg>`)
+**_NOTE:_** [mamba](https://github.com/mamba-org/mamba) is a reimplementation of the conda package manager in C++, so it is much faster when solving dependencies. It is worth installing it in the base env (`conda install mamba`) and just replacing the `conda` with `mamba` command when creating a new env (`mamba create -n <env_name> ...`) or installing a new package (`mamba install <pkg>`). I couldn't find a single reason to not use `mamba` instead of `conda` when creating a `env` or installing a package. But in case of a problem with any of the commands below, `conda` can be used instead.
 
 It is best to change the `base` environment (env) as little as possible and always create a new env when trying new packages. The new env can be created "by hand", e.g.:
 
-`[ conda | mamba ] create -n <env_name> python=3.7
+`mamba create -n <env_name> python=3.7
 spyder
 xarray dask netcdf4 cfgrib eccodes cdsapi
 metpy seawater gsw
@@ -47,9 +47,9 @@ unidecode humanize tabulate termcolor aniso8601 tenacity
 cx_oracle flask
 cartopy seaborn windrose plotly python-kaleido folium ipyleaflet cmocean python-docx xlsxwriter xlrd openpyxl gitpython geopy alphashape`
 
-or imported from a `.yml` file (itself created with `conda env export --no-build > environment.yml`), e.g.:
+or imported from a `.yml` file (itself created with `mamba env export --no-build > environment.yml`), e.g.:
 
-`conda env create -f environment.yml`
+`mamba env create -f environment.yml`
 
 but remembering to edit the `name` and `prefix` variables at the first and last lines to the desired values.
 
@@ -81,12 +81,12 @@ export ORACLE_HOME=/some/dir/instantclient_19_9
 
 Following [this discussion](https://github.com/JiaweiZhuang/xESMF/issues/47), `xesmf` hast to be installed after `esmpy` to work it correctly.
 
-`conda install esmpy`
+`mamba install esmpy`
 
-`conda install xesmf`
+`mamba install xesmf`
 
 ### env to test CF Conventions
-`conda create -n cfconv cfchecker compliance-checker`
+`mamba create -n cfconv cfchecker compliance-checker`
 
 ### Others
 List the available envs:
