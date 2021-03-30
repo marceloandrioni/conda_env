@@ -32,7 +32,7 @@ channels:
 ## Proxy settings (uncomment and configure the 3 lines bellow if behind a proxy)
 # proxy_servers:
 #     http: http://username:password@server:port
-#     https: https://username:password@server:port
+#     https: http://username:password@server:port
 ```
 
 # New envs
