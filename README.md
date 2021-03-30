@@ -18,6 +18,8 @@ Create the file with a text editor if it doesn't exist or just run `conda config
 ## Windows
 `C:\Users\<user>\.condarc`
 
+**_NOTE:_** Make sure the file is named `.condarc` and not `.condarc.txt` with a hidden file extension.
+
 ## Content:
 ```
 ssl_verify: false
