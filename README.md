@@ -83,7 +83,7 @@ export ORACLE_HOME=/some/dir/instantclient_19_9
 
 ### xESMF
 
-Following [this discussion](https://github.com/JiaweiZhuang/xESMF/issues/47), `xesmf` hast to be installed after `esmpy` to work it correctly.
+Following [this discussion](https://github.com/JiaweiZhuang/xESMF/issues/47), `xesmf` has to be installed after `esmpy` to work it correctly.
 
 `mamba install esmpy`
 
