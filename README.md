@@ -3,22 +3,12 @@ Download [Anaconda](https://www.anaconda.com/products/individual#Downloads) and 
 
 # Activate `base` environment
 
-## Linux
 Open a terminal and run `eval "$(/home/eani/anaconda3/bin/conda shell.bash hook)"`
-
-## Windows
-Just open `Anaconda Powershell Prompt (anaconda3)`
 
 # Configure .condarc
 Create the file with a text editor if it doesn't exist or just run `conda config` to create an empty file.
 
-## Linux
 `/home/<user>/.condarc`
-
-## Windows
-`C:\Users\<user>\.condarc`
-
-**_NOTE:_** Make sure the file is named `.condarc` and not `.condarc.txt` with a hidden file extension.
 
 ## Content:
 ```
@@ -62,9 +52,7 @@ After creation, the new env must be activated, e.g.:
 `conda activate <env_name>`
 
 ### cx_oracle:
-To connect to Oracle databases using the `cx_oracle` library, the user also needs the Oracle library files ([Linux](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html)/[Windows](https://www.oracle.com/database/technologies/instant-client/winx64-64-downloads.html)).
-
-#### Linux
+To connect to Oracle databases using the `cx_oracle` library, the user also needs the [Oracle library](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html) files.
 
 Dowload and extract:
 - instantclient-basic-linux.x64-19.9.0.0.0dbru.zip
@@ -76,10 +64,6 @@ export LD_LIBRARY_PATH=/some/dir/instantclient_19_9:$LD_LIBRARY_PATH
 export PATH=/some/dir/instantclient_19_9:$PATH
 export ORACLE_HOME=/some/dir/instantclient_19_9
 ```
-
-#### Windows
-???
-
 
 ### xESMF
 
@@ -104,11 +88,7 @@ Remove an env:
 # pycodestyle
 Ignore some errors and warnings in the code style:
 
-## Linux 
 `/home/<user>/.config/pycodestyle`
-
-## Windows
-???
 
 ## Content:
 ```
