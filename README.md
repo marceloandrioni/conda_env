@@ -1,9 +1,9 @@
-# Download
-Download [Anaconda](https://www.anaconda.com/products/individual#Downloads) and install (tested with `Anaconda3-2020.11`)
+# Install
+Download [Anaconda](https://www.anaconda.com/products/individual#Downloads) and install (tested with `Anaconda3-2021.05-Linux-x86_64.sh`)
 
 # Activate `base` environment
 
-Open a terminal and run `eval "$(/home/eani/anaconda3/bin/conda shell.bash hook)"`
+Open a terminal and run `eval "$(/home/<user>/anaconda3/bin/conda shell.bash hook)"`
 
 # Configure .condarc
 Create the file with a text editor if it doesn't exist or just run `conda config` to create an empty file.
@@ -27,7 +27,7 @@ channels:
 
 # New envs
 
-**_NOTE:_** [mamba](https://github.com/mamba-org/mamba) is a reimplementation of the conda package manager in C++, so it is much faster when solving dependencies. It is worth installing it in the base env (`conda install mamba`) and just replacing the `conda` with `mamba` command when creating a new env (`mamba create -n <env_name> ...`) or installing a new package (`mamba install <pkg>`). I couldn't find a single reason to not use `mamba` instead of `conda` when creating a `env` or installing a package. But in case of a problem with any of the commands below, `conda` can be used instead.
+**_NOTE:_** [mamba](https://github.com/mamba-org/mamba) is a reimplementation of the conda package manager in C++, so it is much faster when solving dependencies. It is worth installing it in the base env (`conda install mamba`) and just replacing the `conda` with `mamba` command when creating a new env (`mamba create -n <env_name> ...`) or installing a new package (`mamba install <pkg>`). I could not find a single reason to not use `mamba` instead of `conda` when creating a `env` or installing a package. But in case of a problem with any of the commands below, `conda` can be used instead.
 
 It is best to change the `base` environment (env) as little as possible and always create a new env when trying new packages. The new env can be created "by hand", e.g.:
 
@@ -55,14 +55,14 @@ After creation, the new env must be activated, e.g.:
 To connect to Oracle databases using the `cx_oracle` library, the user also needs the [Oracle library](http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html) files.
 
 Dowload and extract:
-- instantclient-basic-linux.x64-19.9.0.0.0dbru.zip
-- instantclient-sqlplus-linux.x64-19.9.0.0.0dbru.zip
+- instantclient-basic-linux.x64-21.1.0.0.0.zip
+- instantclient-sqlplus-linux.x64-21.1.0.0.0.zip
 
 Set the paths:
 ```
-export LD_LIBRARY_PATH=/some/dir/instantclient_19_9:$LD_LIBRARY_PATH
-export PATH=/some/dir/instantclient_19_9:$PATH
-export ORACLE_HOME=/some/dir/instantclient_19_9
+export LD_LIBRARY_PATH=/some/dir/instantclient_21_1:$LD_LIBRARY_PATH
+export PATH=/some/dir/instantclient_21_1:$PATH
+export ORACLE_HOME=/some/dir/instantclient_21_1
 ```
 
 ### xESMF
