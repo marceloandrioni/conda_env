@@ -17,6 +17,7 @@ ssl_verify: false
 channels:
   - defaults
   - conda-forge
+  - openhydrology   # lmoments3
   - fbriol   # FES Tide https://bitbucket.org/cnes_aviso/fes/src/master/
 
 ## Proxy settings (uncomment and configure the 3 lines bellow if behind a proxy)
@@ -36,9 +37,11 @@ spyder
 xarray dask netcdf4 cfgrib rasterio rioxarray eccodes cdsapi
 nco cdo ncview
 metpy seawater gsw
+lmoments3
 unidecode humanize tabulate termcolor aniso8601 tenacity
-cx_oracle flask
-cartopy seaborn windrose plotly python-kaleido folium ipyleaflet cmocean python-docx xlsxwriter xlrd openpyxl
+cx_oracle flask celery flower
+cartopy seaborn windrose plotly python-kaleido folium ipyleaflet cmocean
+python-docx xlsxwriter xlrd openpyxl
 git gitpython
 geopy alphashape`
 
