@@ -45,10 +45,15 @@ python-docx xlsxwriter xlrd openpyxl
 git gitpython
 geopy alphashape`
 
-or imported from a `.yml` file (itself created with `mamba env export --no-build > environment.yml`), e.g.:
+or imported from text files, e.g.:
 
-`mamba env create -f environment.yml`
+`txt` with exact copy (versions) of packages:
+* `conda list --explicit > spec-file.txt`
+* `conda install --name <env_name> --file spec-file.txt`
 
+`yml` with same packages (but not necessarly same version):
+* `mamba env export --no-build > environment.yml`
+* `mamba env create -f environment.yml`
 but remembering to edit the `name` and `prefix` variables at the first and last lines to the desired values.
 
 After creation, the new env must be activated, e.g.:
