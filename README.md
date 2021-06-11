@@ -51,7 +51,7 @@ or imported from text files, e.g.:
 * `conda list --explicit > spec-file.txt`
 * `conda install --name <env_name> --file spec-file.txt`
 
-`yml` with same packages (but not necessarly same version):
+`yml` with same packages (but not necessarly same versions):
 * `mamba env export --no-build > environment.yml`
 * `mamba env create -f environment.yml`
 but remembering to edit the `name` and `prefix` variables at the first and last lines to the desired values.
