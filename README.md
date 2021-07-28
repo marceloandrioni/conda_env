@@ -35,7 +35,7 @@ It is best to change the `base` environment (env) as little as possible and alwa
 spyder
 xarray dask netcdf4 cfgrib rasterio rioxarray eccodes cdsapi
 nco cdo ncview
-metpy seawater gsw fes
+metpy seawater gsw fes pyinterp
 unidecode humanize tabulate termcolor aniso8601 tenacity
 cx_oracle flask celery flower
 cartopy seaborn windrose plotly python-kaleido folium ipyleaflet cmocean
