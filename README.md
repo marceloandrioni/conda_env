@@ -41,7 +41,7 @@ cx_oracle flask celery flower
 cartopy seaborn windrose plotly python-kaleido folium ipyleaflet cmocean colorcet
 python-docx xlsxwriter xlrd openpyxl
 git gitpython
-geopy alphashape`
+geopy alphashape descartes`
 
 or imported from text files, e.g.:
 
