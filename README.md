@@ -38,7 +38,7 @@ nco cdo ncview lftp
 metpy seawater gsw fes pyinterp
 unidecode humanize tabulate termcolor aniso8601 tenacity
 cx_oracle flask celery flower
-cartopy seaborn windrose plotly python-kaleido folium ipyleaflet cmocean colorcet
+cartopy seaborn windrose plotly python-kaleido folium ipyleaflet cmocean colorcet cmasher
 python-docx xlsxwriter xlrd openpyxl
 git gitpython
 geopy alphashape descartes`
