@@ -33,6 +33,7 @@ It is best to change the `base` environment (env) as little as possible and alwa
 
 `mamba create -n <env_name> python=3.7
 spyder
+pandas missingno
 xarray dask netcdf4 cfgrib rasterio rioxarray eccodes cdsapi
 nco cdo ncview lftp
 metpy seawater gsw fes pyinterp
