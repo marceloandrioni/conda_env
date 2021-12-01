@@ -29,7 +29,7 @@ channels:
 
 **_NOTE:_** [mamba](https://github.com/mamba-org/mamba) is a reimplementation of the conda package manager in C++, so it is much faster when solving dependencies. It is worth installing it in the base env and just replacing the `conda` with `mamba` command when creating a new env (`mamba create -n <env_name> ...`) or installing a new package (`mamba install <pkg>`). I could not find a single reason to not use `mamba` instead of `conda` when creating a `env` or installing a package. But in case of a problem with any of the commands below, `conda` can be used instead.
 
-I don't know the reason but `conda install mamba` only install olders versions om `mamba`. But a newer vesion can be installed with the older `mamba` itself:
+I don't know the reason but `conda install mamba` only installs olders versions om `mamba`. But a newer vesion can be installed with the older `mamba` itself:
 
 ```
 conda install mamba
@@ -61,6 +61,8 @@ or imported from text files, e.g.:
 * `mamba env export --no-build > environment.yml`
 * `mamba env create -f environment.yml`
 but remembering to edit the `name` and `prefix` variables at the first and last lines to the desired values.
+
+**_NOTE:_** even using `mamba` a `env` with so many packages can take several (~30) minutes to solve all the dependencies, best to go grab a ☕.
 
 After creation, the new env must be activated, e.g.:
 
