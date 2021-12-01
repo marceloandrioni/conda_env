@@ -29,7 +29,7 @@ channels:
 
 **_NOTE:_** [mamba](https://github.com/mamba-org/mamba) is a reimplementation of the conda package manager in C++, so it is much faster when solving dependencies. It is worth installing it in the base env and just replacing the `conda` with `mamba` command when creating a new env (`mamba create -n <env_name> ...`) or installing a new package (`mamba install <pkg>`). I could not find a single reason to not use `mamba` instead of `conda` when creating a `env` or installing a package. But in case of a problem with any of the commands below, `conda` can be used instead.
 
-I don't know the reason but `conda install mamba` only installs olders versions om `mamba`. But a newer vesion can be installed with the older `mamba` itself:
+I don't know the reason but `conda install mamba` only installs olders versions on `mamba`. But a newer vesion can be installed with the older `mamba` itself:
 
 ```
 conda install mamba
@@ -81,14 +81,6 @@ export LD_LIBRARY_PATH=/some/dir/instantclient_21_1:$LD_LIBRARY_PATH
 export PATH=/some/dir/instantclient_21_1:$PATH
 export ORACLE_HOME=/some/dir/instantclient_21_1
 ```
-
-### xESMF
-
-Following [this discussion](https://github.com/JiaweiZhuang/xESMF/issues/47), `xesmf` has to be installed after `esmpy` to work it correctly.
-
-`mamba install esmpy`
-
-`mamba install xesmf`
 
 ### env to test CF Conventions
 `mamba create -n cfconv cfchecker compliance-checker`
