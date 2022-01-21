@@ -43,7 +43,7 @@ spyder
 pandas missingno
 xarray dask netcdf4 cfgrib rasterio rioxarray eccodes cdsapi
 nco cdo ncview lftp
-metpy metar seawater gsw fes pyinterp
+metpy metar seawater gsw pyfes pyinterp
 unidecode humanize tabulate termcolor aniso8601 tenacity
 cx_oracle flask celery flower
 cartopy seaborn windrose plotly python-kaleido folium ipyleaflet cmocean colorcet cmasher
