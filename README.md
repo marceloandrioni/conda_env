@@ -38,7 +38,7 @@ mamba install mamba"<=0.19.0"
 
 After installing `mamba` it is best to change the `base` environment (env) as little as possible and always create a new env when trying new packages. The new env can be created "by hand", e.g.:
 
-`mamba create -n <env_name> python=3.7
+`mamba create -n <env_name> python=3.8
 spyder
 pandas missingno
 xarray dask netcdf4 cfgrib rasterio rioxarray eccodes cdsapi
