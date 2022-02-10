@@ -42,14 +42,14 @@ After installing `mamba` it is best to change the `base` environment (env) as li
 spyder
 pandas missingno
 xarray dask netcdf4 cfgrib rasterio rioxarray eccodes cdsapi
-nco cdo ncview lftp
 metpy metar seawater gsw pyfes pyinterp
 unidecode humanize tabulate termcolor aniso8601 tenacity
 cx_oracle flask celery flower
 cartopy seaborn windrose plotly python-kaleido folium ipyleaflet cmocean colorcet cmasher
 python-docx xlsxwriter xlrd openpyxl
 git gitpython
-geopy alphashape descartes`
+geopy alphashape descartes
+EXTRA-EXTRA-EXTRA nco cdo ncview lftp qgis`
 
 or imported from text files, e.g.:
 
@@ -63,6 +63,7 @@ or imported from text files, e.g.:
 but remembering to edit the `name` and `prefix` variables at the first and last lines to the desired values.
 
 **_NOTE:_** even using `mamba` a `env` with so many packages can take several (~30) minutes to solve all the dependencies, best to go grab a ☕.
+**_NOTE:_** the packages listed after `EXTRA-EXTRA-EXTRA` are some useful non-python programs that can be installed with conda/mamba, but they are not mandatory.
 
 After creation, the new env must be activated, e.g.:
 
