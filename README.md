@@ -43,7 +43,8 @@ spyder
 pandas missingno
 xarray dask netcdf4 cfgrib rasterio rioxarray eccodes cdsapi
 metpy metar seawater gsw pyfes pyinterp
-unidecode humanize tabulate termcolor aniso8601 tenacity
+unidecode humanize tabulate termcolor aniso8601
+tenacity cachetools
 cx_oracle flask celery flower
 cartopy seaborn windrose plotly python-kaleido folium ipyleaflet cmocean colorcet cmasher
 python-docx xlsxwriter xlrd openpyxl
