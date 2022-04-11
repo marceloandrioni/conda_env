@@ -64,8 +64,7 @@ or imported from text files, e.g.:
 * `mamba env create -f environment.yml`
 but remembering to edit the `name` and `prefix` variables at the first and last lines to the desired values.
 
-**_NOTE:_** even using `mamba` a `env` with so many packages can take several (~30) minutes to solve all the dependencies, best to go grab a ☕.
-**_NOTE:_** the packages listed after `EXTRA-EXTRA-EXTRA` are some useful non-python programs that can be installed with conda/mamba, but they are not mandatory.
+**_NOTE:_** even using `mamba` an `env` with so many packages can take several (~30) minutes to solve all the dependencies, best to go grab a ☕.
 
 After creation, the new env must be activated, e.g.:
 
