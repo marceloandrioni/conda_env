@@ -45,12 +45,13 @@ xarray dask netcdf4 cfgrib rasterio rioxarray eccodes cdsapi
 metpy metar seawater gsw pyfes pyinterp
 unidecode humanize tabulate termcolor aniso8601
 tenacity cachetools
-cx_oracle flask celery flower
+cx_oracle flask flask-restful celery flower
 cartopy seaborn windrose plotly python-kaleido folium ipyleaflet cmocean colorcet cmasher
 python-docx xlsxwriter xlrd openpyxl
 git gitpython
-geopy alphashape descartes
-EXTRA-EXTRA-EXTRA nco cdo ncview lftp qgis`
+lftp awscli
+nco cdo ncview
+geopy alphashape descartes`
 
 or imported from text files, e.g.:
 
