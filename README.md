@@ -28,7 +28,7 @@ show_channel_urls: True
 If bebind a proxy (usual in corporations), it's possible to set proxy variables in the `.condarc` file like [this](https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html#configure-conda-for-use-behind-a-proxy-server-proxy-servers). However, the `mamba` package manager seems to ignore these definitions and `conda` itself ignores the `no_proxy` variable as reported [here](https://github.com/conda/conda/issues/7818). Due to this, is recommended to only set the proxy variables in the `~/.bashrc` file, e.g.:
 
 ```
-export {all_proxy,ALL_PROXY,http_proxy,HTTP_PROXY,https_proxy,HTTPS_PROXY,ftp_proxy,FTP_PROXY}=http://myuser:mypsw@my-company.proxy.com:8080"
+export {all_proxy,ALL_PROXY,http_proxy,HTTP_PROXY,https_proxy,HTTPS_PROXY,ftp_proxy,FTP_PROXY}=http://myuser:mypsw@my-company.proxy.com:8080
 export {no_proxy,NO_PROXY}=localhost,127.0.0.1,my-company.com
 ```
 
