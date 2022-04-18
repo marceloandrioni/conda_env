@@ -11,29 +11,33 @@ Create the file with a text editor if it doesn't exist or just run `conda config
 `/home/<user>/.condarc`
 
 ## Content:
-```
-ssl_verify: false
 
+```
 channels:
   - defaults
   - conda-forge
-  - fbriol   # FES Tide https://bitbucket.org/cnes_aviso/fes/src/master/
+  - fbriol   # FES tide https://github.com/CNES/aviso-fes
 
-## Proxy settings (uncomment and configure the 3 lines bellow if behind a proxy)
-# proxy_servers:
-#     http: http://username:password@server:port
-#     https: http://username:password@server:port
+# https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html#ssl-verification-ssl-verify
+ssl_verify: false
+
+# https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html#show-channel-urls-show-channel-urls
+show_channel_urls: True
+```
+
+If bebind a proxy (usual in corporations), it's possible to set proxy variables in the `.condarc` file like [this](https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html#configure-conda-for-use-behind-a-proxy-server-proxy-servers). However, the `mamba` package manager seems to ignore these definitions and `conda` itself ignores the `no_proxy` variable as reported [here](https://github.com/conda/conda/issues/7818). Due to this, is recommended to only set the proxy variables in the `~/.bashrc` file, e.g.:
+
+```
+export {all_proxy,ALL_PROXY,http_proxy,HTTP_PROXY,https_proxy,HTTPS_PROXY,ftp_proxy,FTP_PROXY}=http://myuser:mypsw@my-company.proxy.com:8080"
+export {no_proxy,NO_PROXY}=localhost,127.0.0.1,my-company.com
 ```
 
 # New envs
 
 **_NOTE:_** [mamba](https://github.com/mamba-org/mamba) is a reimplementation of the conda package manager in C++, so it is much faster when solving dependencies. It is worth installing it in the base env and just replacing the `conda` with `mamba` command when creating a new env (`mamba create -n <env_name> ...`) or installing a new package (`mamba install <pkg>`). I could not find a single reason to not use `mamba` instead of `conda` when creating a `env` or installing a package. But in case of a problem with any of the commands below, `conda` can be used instead.
 
-I don't know the reason but `conda install mamba` only installs olders versions on `mamba`. But a newer vesion can be installed with the older `mamba` itself, e.g.:
-
 ```
 conda install mamba
-mamba install mamba"<=0.19.0"
 ```
 
 After installing `mamba` it is best to change the `base` environment (env) as little as possible and always create a new env when trying new packages. The new env can be created "by hand", e.g.:
