@@ -37,19 +37,19 @@ export {no_proxy,NO_PROXY}=localhost,127.0.0.1,my-company.com
 **_NOTE:_** [mamba](https://github.com/mamba-org/mamba) is a reimplementation of the conda package manager in C++, so it is much faster when solving dependencies. It is worth installing it in the base env and just replacing the `conda` with `mamba` command when creating a new env (`mamba create -n <env_name> ...`) or installing a new package (`mamba install <pkg>`). I could not find a single reason to not use `mamba` instead of `conda` when creating a `env` or installing a package. But in case of a problem with any of the commands below, `conda` can be used instead.
 
 ```
-conda install mamba
+conda install -n base mamba
 ```
 
 After installing `mamba` it is best to change the `base` environment (env) as little as possible and always create a new env when trying new packages. The new env can be created "by hand", e.g.:
 
 `mamba create -n <env_name> python=3.8
-spyder mamba pipreqs
+spyder
 pandas missingno
 xarray dask netcdf4 cfgrib rasterio rioxarray eccodes cdsapi
 metpy metar seawater gsw pyfes pyinterp
 unidecode humanize tabulate termcolor aniso8601
 bs4 tenacity cachetools
-pikepdf cx_oracle flask flask-restful celery flower
+pipreqs pikepdf cx_oracle flask flask-restful celery flower
 cartopy seaborn windrose plotly python-kaleido folium ipyleaflet cmocean colorcet cmasher
 python-docx xlsxwriter xlrd openpyxl
 geopy alphashape descartes
