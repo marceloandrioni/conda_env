@@ -34,7 +34,7 @@ export {no_proxy,NO_PROXY}=localhost,127.0.0.1,my-company.com
 
 # New envs
 
-**_NOTE:_** [mamba](https://github.com/mamba-org/mamba) is a reimplementation of the conda package manager in C++, so it is much faster when solving dependencies. It is worth installing it in the base env and just replacing the `conda` with `mamba` command when creating a new env (`mamba create -n <env_name> ...`) or installing a new package (`mamba install <pkg>`). I could not find a single reason to not use `mamba` instead of `conda` when creating a `env` or installing a package. But in case of a problem with any of the commands below, `conda` can be used instead.
+**_NOTE:_** [mamba](https://github.com/mamba-org/mamba) is a reimplementation of the conda package manager in C++, so it is much faster when solving dependencies. It is worth installing it in the base env and just replacing the `conda` with `mamba` command when creating a new env (`mamba create -n <env_name> ...`) or installing a new package (`mamba install <pkg>`). I could not find a single reason to not use `mamba` instead of `conda` when creating a `env` or installing a package. But in case of a problem with any of the commands below, `conda` can be used instead. `mamba` has some dependencies, so it can take `conda` a few minutes (~5) to isntall it.
 
 ```
 conda install -n base mamba
@@ -43,7 +43,7 @@ conda install -n base mamba
 After installing `mamba` it is best to change the `base` environment (env) as little as possible and always create a new env when trying new packages. The new env can be created "by hand", e.g.:
 
 `mamba create -n <env_name> python=3.8
-spyder
+spyder mamba
 pandas missingno
 xarray dask netcdf4 cfgrib rasterio rioxarray eccodes cdsapi
 metpy metar seawater gsw pyfes pyinterp
@@ -68,7 +68,7 @@ or imported from text files, e.g.:
 * `mamba env create -f environment.yml`
 but remembering to edit the `name` and `prefix` variables at the first and last lines to the desired values.
 
-**_NOTE:_** even using `mamba` an `env` with so many packages can take several (~30) minutes to solve all the dependencies, best to go grab a ☕.
+**_NOTE:_** even using `mamba` an `env` with so many packages can take several (~5) minutes to solve all the dependencies, best to go grab a ☕.
 
 After creation, the new env must be activated, e.g.:
 
