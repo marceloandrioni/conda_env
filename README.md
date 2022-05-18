@@ -16,7 +16,6 @@ Create the file with a text editor if it doesn't exist or just run `conda config
 channels:
   - defaults
   - conda-forge
-  - openhydrology   # lmoments3
   - fbriol   # FES tide https://github.com/CNES/aviso-fes
 
 # https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html#ssl-verification-ssl-verify
@@ -47,7 +46,7 @@ After installing `mamba` it is best to change the `base` environment (env) as li
 spyder mamba
 pandas pyjanitor missingno
 xarray dask netcdf4 cfgrib rasterio rioxarray eccodes cdsapi
-lmoments3 metpy metar seawater gsw pyfes pyinterp
+metpy metar seawater gsw pyfes pyinterp
 unidecode humanize tabulate termcolor aniso8601
 bs4 tenacity cachetools
 pipreqs pikepdf cx_oracle flask flask-restful celery flower
