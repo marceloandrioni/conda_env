@@ -16,6 +16,7 @@ Create the file with a text editor if it doesn't exist or just run `conda config
 channels:
   - defaults
   - conda-forge
+  - openhydrology   # lmoments3
   - fbriol   # FES tide https://github.com/CNES/aviso-fes
 
 # https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/use-condarc.html#ssl-verification-ssl-verify
