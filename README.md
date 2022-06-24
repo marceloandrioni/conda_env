@@ -1,9 +1,5 @@
 # Install
-Download [Anaconda](https://www.anaconda.com/products/individual#Downloads) and install (tested with `Anaconda3-2021.11-Linux-x86_64.sh`)
-
-# Activate `base` environment
-
-Open a terminal and run `eval "$(/home/<user>/anaconda3/bin/conda shell.bash hook)"`
+Download [Anaconda](https://www.anaconda.com/products/individual#Downloads) and install (tested with `Anaconda3-2022.05-Linux-x86_64.sh`)
 
 # Configure .condarc
 Create the file with a text editor if it doesn't exist or just run `conda config` to create an empty file.
@@ -13,6 +9,8 @@ Create the file with a text editor if it doesn't exist or just run `conda config
 ## Content:
 
 ```
+auto_activate_base: false
+
 channels:
   - defaults
   - conda-forge
