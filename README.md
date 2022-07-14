@@ -89,6 +89,9 @@ export ORACLE_HOME=/some/dir/instantclient_21_1
 ### env to test CF Conventions
 `mamba create -n cfconv cfchecker compliance-checker`
 
+### env to run QGIS
+`mamba create -n qgis python=3.8 qgis jupyter qtconsole matplotlib numpy pandas xarray netCDF4`
+
 ### Others
 List the available envs:
 
