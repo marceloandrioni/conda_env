@@ -40,12 +40,12 @@ conda install -y -n base mamba
 
 After installing `mamba` it is best to change the `base` environment (env) as little as possible and always create a new env when trying new packages. The new env can be created "by hand", e.g.:
 
-`mamba create -n <env_name> python=3.9
+`mamba create -n <env_name> python=3.8
 spyder mamba
 pandas pyjanitor missingno
 xarray dask netcdf4 cfgrib rasterio rioxarray cf_xarray eccodes cdsapi
 astropy metpy metar seawater gsw pyfes pyinterp
-unidecode humanize tabulate termcolor aniso8601
+universal_pathlib unidecode humanize tabulate termcolor aniso8601
 gooey bs4 tenacity cachetools
 pipreqs pikepdf cx_oracle flask flask-restful celery
 cartopy owslib seaborn windrose plotly python-kaleido folium ipyleaflet cmocean colorcet cmasher
