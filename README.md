@@ -42,7 +42,7 @@ After installing `mamba` it is best to change the `base` environment (env) as li
 
 `mamba create -n <env_name> python=3.8
 spyder mypy pytest python-magic
-pandas pyjanitor missingno
+pandas pandas-stubs pyjanitor missingno
 xarray dask netcdf4 cfgrib rasterio rioxarray cf_xarray eccodes cdsapi pygrib
 astropy metpy metar seawater gsw pyfes pyinterp
 universal_pathlib unidecode humanize tabulate termcolor aniso8601
