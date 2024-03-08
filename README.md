@@ -40,10 +40,10 @@ conda install -y -n base mamba
 
 After installing `mamba` it is best to change the `base` environment (env) as little as possible and always create a new env when trying new packages. The new env can be created "by hand", e.g.:
 
-`mamba create -n <env_name> python=3.8
-spyder mypy pytest python-magic
+`mamba create -n <env_name> python=3.10
+spyder mypy tqdm pytest python-magic
 pandas pandas-stubs pyjanitor missingno
-xarray dask netcdf4 cfgrib rasterio rioxarray cf_xarray eccodes cdsapi pygrib
+xarray dask netcdf4 cfgrib zarr rasterio rioxarray cf_xarray eccodes cdsapi pygrib
 astropy metpy metar seawater gsw pyfes pyinterp
 universal_pathlib unidecode humanize tabulate termcolor aniso8601
 gooey bs4 tenacity cachetools
