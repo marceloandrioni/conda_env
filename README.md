@@ -48,7 +48,7 @@ astropy metpy metar seawater gsw pyfes pyinterp
 universal_pathlib unidecode humanize tabulate termcolor aniso8601
 gooey bs4 tenacity cachetools
 pipreqs pikepdf cx_oracle flask flask-restful celery
-cartopy owslib seaborn windrose plotly python-kaleido folium ipyleaflet cmocean colorcet cmasher
+cartopy cartopy_offlinedata owslib seaborn windrose plotly python-kaleido folium ipyleaflet cmocean colorcet cmasher
 python-docx xlsxwriter xlrd openpyxl
 geopy alphashape descartes
 gitpython git
